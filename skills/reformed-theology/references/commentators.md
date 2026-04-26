@@ -132,3 +132,23 @@ StudyLight.org provides free access to most of the primary commentators:
 - Also available: Geneva Study Bible (`gsb`), Expositor's Bible Commentary (`teb`), Gundry (for NT)
 
 When citing commentators to users, recommend StudyLight.org as a free resource for their own study.
+
+## Citation Accuracy
+
+When referencing commentators:
+
+**1. Be honest about what you know vs. what you're inferring**
+If you know a commentator's position on a passage from your training data, cite it. If you're inferring what they WOULD say based on their theological framework, say so: "Calvin would likely argue..." or "Based on Gill's consistent position on election, he would..."
+
+**2. Paraphrase rather than fabricate quotes**
+Unless you are confident of exact wording, paraphrase: "Calvin argues that..." rather than putting words in quotation marks that may not be verbatim. Inaccurate direct quotes erode trust.
+
+**3. Give verifiable references**
+Always provide book/chapter/verse so the user can look it up themselves. "Calvin on John 10:28" or "Gill on Romans 8:30" — the user can then verify at StudyLight.org or other commentary databases.
+
+**4. Note when commentators disagree with each other**
+This is valuable information. If Calvin and Wesley disagree on a passage, showing both positions with their reasoning is more helpful than only citing the one you agree with.
+
+**5. Distinguish the commentator's exegesis from their application**
+Sometimes a commentator's textual analysis is sound but their application reflects their era. Note the difference when relevant.
+

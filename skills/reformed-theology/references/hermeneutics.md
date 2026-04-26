@@ -38,6 +38,31 @@ The historical-grammatical method is the standard evangelical approach to biblic
 - The OT anticipates Christ; the NT reveals Christ; the whole Bible is one story of redemption
 - But: don't force Christological readings where the text doesn't warrant it. A passage about farming techniques in Proverbs is wisdom literature, not a hidden allegory about Jesus.
 
+## Word Study Methodology
+
+When examining key Greek or Hebrew terms:
+
+**1. Check the semantic range**
+Look up the word in a standard lexicon (BDAG for Greek, BDB/HALOT for Hebrew). Note the RANGE of meanings, not just one definition.
+
+**2. How does THIS AUTHOR use it elsewhere?**
+This is the most important step. Paul's use of δικαιοσύνη matters more than how Luke uses it, when interpreting Paul. Same word, different authors, sometimes different nuance.
+
+**3. Check the LXX usage (for NT words with OT background)**
+Many NT theological terms were shaped by the Septuagint's translation of Hebrew concepts. ἐκκλησία, διαθήκη, δικαιοσύνη, ἱλαστήριον — all have rich OT backgrounds via the LXX that illuminate their NT meaning.
+
+**4. Context determines meaning**
+A word means what it means in THIS sentence, in THIS paragraph, in THIS argument — not everything it could mean everywhere. The dictionary gives options; context picks the right one.
+
+**5. Avoid the root fallacy**
+Don't assume a compound word means the sum of its parts. ἐκκλησία does NOT mean "called-out ones" just because ἐκ + καλέω. By the 1st century it simply meant "assembly/gathering." Similarly, ἀπόστολος doesn't carry deep "sent away" theology in every usage — sometimes it just means "messenger."
+
+**6. Avoid illegitimate totality transfer**
+Don't import every possible meaning of a word into a single occurrence. When Paul says πίστις in Romans 3:22, he means "faith/trust" — not simultaneously "faithfulness" and "belief system" and "the Christian faith" and "loyalty." Context selects one meaning from the range.
+
+**7. Check for theological loading**
+Some words carry more theological weight in certain contexts. λόγος in John 1:1 is theologically loaded in a way λόγος in Acts 15:6 ("discussion") is not. Don't over-theologize common words, and don't under-theologize loaded ones.
+
 ## Common Interpretive Errors
 
 **Proof-texting:** Pulling a verse out of context to support a predetermined conclusion. Always read the full passage and its flow of argument.
@@ -53,6 +78,30 @@ The historical-grammatical method is the standard evangelical approach to biblic
 **Appeal to "the Greek/Hebrew" without doing the work:** Citing a lexicon entry doesn't settle interpretation. Syntax, context, discourse analysis, and usage all matter more than a dictionary definition.
 
 **Novelty as virtue:** If no one in 2,000 years of church history held your interpretation, the burden of proof is on you, not on them.
+
+## Using Church History
+
+Church history is a witness, not an authority. Use it wisely:
+
+**1. Patristic and historical consensus carries weight**
+If the church universally held a position for 1,500+ years, the burden of proof is on anyone proposing a novel reading. This doesn't mean the consensus is infallible — but it means you need very strong exegetical reasons to overturn it, not just "I read it differently."
+
+**2. Historical arguments are not decisive**
+A doctrine isn't true because it's old, and it isn't false because it's old. The Reformers challenged centuries of consensus on justification — and they were right, because they had stronger exegetical arguments. History informs; Scripture decides.
+
+**3. Beware the genetic fallacy**
+Don't dismiss an argument based on when or where it originated. "That's a 16th-century idea" is not a refutation. "That interpretation was invented in the 1970s" IS relevant — not because newness is bad per se, but because 2,000 years of readers missing something that seems obvious to modern interpreters should trigger caution.
+
+**4. Know the key periods**
+- **Apostolic Fathers** (late 1st–2nd century): Clement, Ignatius, Polycarp — closest to the apostles
+- **Church Fathers** (2nd–5th century): Irenaeus, Athanasius, Augustine, Chrysostom, Jerome — the major theological foundations
+- **Medieval period** (5th–15th century): Scholasticism, Aquinas, development of sacramental theology
+- **Reformation** (16th century): Luther, Calvin, Zwingli — recovery of sola scriptura and sola fide
+- **Post-Reformation** (17th century): Puritans, confessional development, Protestant orthodoxy
+- **Modern** (18th century–present): Enlightenment challenges, liberal theology, evangelical responses, neo-orthodoxy
+
+**5. When someone claims "the early church believed X"**
+Always ask: which early church father? What's the source? The early church was not monolithic — there was significant diversity of opinion on many secondary issues. Cherry-picking one father to support your view while ignoring three others who disagree is dishonest.
 
 ## The Role of Presuppositions
 

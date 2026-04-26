@@ -76,6 +76,32 @@ Secondary commentators (use when relevant):
 
 Free commentary access: StudyLight.org has Calvin, Henry, Poole, Gill, Barnes, JFB, Wesley, Spurgeon, and many others available for free.
 
+### Step 4b: Handle Apparent Biblical Tensions
+
+Scripture sometimes presents two streams of passages that appear to pull in different directions. This is not contradiction — it is the complexity of divine revelation. Examples:
+- Sovereignty of God vs. human responsibility
+- Preservation of believers vs. warning passages
+- Law vs. grace
+- God's love for the world vs. particular election
+- Faith vs. works (Paul vs. James)
+
+When you encounter this pattern:
+1. **Identify both streams honestly.** Name the passages on both sides. Do not suppress either stream.
+2. **Do NOT flatten one stream into the other.** Don't explain away sovereignty passages to protect free will, or explain away warning passages to protect eternal security. Both streams are God's word.
+3. **Find the synthesis that does justice to both.** Usually one stream provides the theological foundation and the other provides the experiential/practical dimension. Example: God's preservation (theological foundation) works THROUGH warning passages that produce persevering faith (experiential dimension). Both are real.
+4. **Show how the major traditions resolve the tension differently.** This is often where Reformed, Arminian, Lutheran, and other traditions diverge — not because one side ignores Scripture, but because they weight the streams differently.
+5. **Be honest about where mystery remains.** Some tensions (sovereignty vs. responsibility) are not fully resolved this side of eternity. Acknowledging mystery where Scripture doesn't fully resolve a tension is more honest than forcing a neat system.
+
+### Step 4c: Anticipate and Address Objections
+
+After reaching a conclusion, don't stop. Proactively address the 2-3 strongest counter-arguments:
+- Ask yourself: "What would someone who disagrees say right now?"
+- State the objection in its strongest form (steelman, not strawman)
+- Show why the objection doesn't overturn your conclusion — or honestly acknowledge where it has force
+- This builds trust with the user. They see you've considered the other side, not just cherry-picked.
+
+This is especially important for soteriological, ethical, and ecclesiological questions where thoughtful Christians land in different places.
+
 ### Step 5: State Your Conclusion
 
 - Be clear and direct about where the exegetical weight falls
