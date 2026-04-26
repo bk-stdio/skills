@@ -122,3 +122,23 @@ Framework for evaluating whether a specific application is culturally bound or u
 5. **What did the church practice for the first 1,900 years?** → Strong weight. If the church universally practiced something for 19 centuries and only stopped in the last 60 years, the burden of proof is on the change, not on the tradition.
 
 **Warning:** This framework must be applied honestly, not as a tool to dismiss inconvenient commands. If the text grounds a command in creation order (1 Cor 11, 1 Tim 2), you cannot use "cultural context" to set it aside without a very strong argument.
+
+## Handling Prophetic Fulfillment Language
+
+Old Testament prophecies about the new covenant (Jeremiah 31:31–34, Ezekiel 36:25–27, Joel 2:28–32) use language that can describe either:
+- **The "already" dimension** — what is true now in the church age
+- **The "not yet" dimension** — what will be fully realized only in the eschaton
+
+This matters because how you read these prophecies drives major theological conclusions:
+
+**Example: Jeremiah 31:34 — "They shall all know me, from the least to the greatest"**
+- If this is fully realized NOW → the new covenant community is entirely regenerate → credobaptism follows
+- If this is eschatologically fulfilled (already/not yet) → the visible church remains a mixed community → paedobaptism is possible
+- Hebrews 8 quotes Jeremiah 31 but Hebrews 10:29 describes someone "sanctified" by covenant blood who falls away — which suggests the visible new covenant community includes non-regenerate members
+
+When prophetic language is at stake, always identify:
+1. Is this fulfilled NOW, AT THE ESCHATON, or PROGRESSIVELY?
+2. Does the NT author's own application clarify the timing?
+3. Are there other NT passages that complicate a simple "fully now" reading?
+
+Do not flatten prophetic tension. The "already/not yet" framework exists because the NT itself requires it — the kingdom IS here AND is coming. Both are true simultaneously.

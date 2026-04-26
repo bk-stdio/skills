@@ -152,3 +152,6 @@ This is valuable information. If Calvin and Wesley disagree on a passage, showin
 **5. Distinguish the commentator's exegesis from their application**
 Sometimes a commentator's textual analysis is sound but their application reflects their era. Note the difference when relevant.
 
+**6. Be specific, not vague**
+Don't write "Calvin argues for X" when you can write "Calvin, commenting on Acts 2:39, argues that 'the promise is for your children' echoes the Abrahamic covenant and therefore includes believers' offspring in the new covenant community." Specific page/passage/argument > vague attribution. The reader should be able to trace the claim back to the source.
+

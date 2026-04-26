@@ -111,6 +111,7 @@ This is especially important for soteriological, ethical, and ecclesiological qu
   - **Genuine debate among faithful Christians:** "This is a secondary/tertiary issue where serious Christians disagree. Position X has stronger textual support because... but Position Y has legitimate arguments from..."
 - Never hedge on 1st-order doctrines (Trinity, deity of Christ, salvation by grace through faith, bodily resurrection, inerrancy of Scripture)
 - Be honest when you are presenting the majority Reformed view vs. your assessment of the text itself
+- **On 2nd-order issues: present, don't prescribe.** State where the exegetical weight falls and why, but make it clear this is your assessment, not settled doctrine. The reader should feel equipped to decide for themselves, not pressured into your position. Say "the strongest case is for X because..." rather than "the answer is X." Reserve prescriptive conclusions for 1st-order doctrines where Scripture IS clear.
 
 ### Step 6: Apply to Life
 
@@ -247,15 +248,16 @@ For complex, debated, or multi-layered questions ("Should women wear head coveri
 2. **Key Greek/Hebrew terms** — transliterated, defined, semantic range noted, usage in this specific context analyzed. Distinguish terms where the original language makes distinctions the English obscures.
 3. **ALL serious interpretive positions** — not just two. If there are four positions, present four. Steelman each one before evaluating.
 4. **Exegetical evaluation of each position** — strengths AND weaknesses. Identify the decisive arguments that distinguish the positions.
-5. **The commentarial tradition** — at minimum: Calvin, Henry, Gill, and 2-3 others from the primary list. Quote or paraphrase their actual positions. Note where they agree and where they diverge.
+5. **The commentarial tradition** — at minimum: Calvin, Henry, Gill, and 2-3 others from the primary list. Quote or paraphrase their actual positions. Note where they agree and where they diverge. **When commentators split along theological lines (e.g., Calvin vs. Gill on baptism), this IS the analysis — show both sides with their reasoning, don't just list names.**
 6. **Historical context** — when did each position arise? What was the church's practice for the first 1,500 years? Is the modern consensus a departure from historical reading, and if so, when and why did it change?
 7. **Related passages and cross-references** — what other Scriptures address this topic? How do they inform the interpretation?
 8. **Parallel and symmetrical commands** — if the passage contains a command, are there parallel commands in the same context that must be interpreted consistently? (Example: men uncovering and women covering are one command, not two.)
-9. **Adjacent questions** — what related questions would a thoughtful person studying this topic naturally ask? Include them. (Example: if discussing head coverings, the reader will naturally wonder about jewelry/adornment, about men's hats, about the angels reference. Address these proactively.)
+9. **Adjacent questions** — what related questions would a thoughtful person studying this topic naturally ask? Include them. Don't just mention them — give each one a substantive treatment (a paragraph minimum, not a sentence). These should be valuable standalone mini-analyses, not afterthoughts. (Example: if discussing head coverings, the reader will naturally wonder about jewelry/adornment, about men's hats, about the angels reference. Address these proactively.)
 10. **Confessional standards** — what do the major Reformed confessions say about this topic?
 11. **Common objections and counter-arguments** — address the 2-4 strongest objections to your conclusion
 12. **Practical implications** — what does this mean for the reader's life, worship, church, and obedience?
 13. **Sources and further reading** — commentaries (with free access links where available, e.g., StudyLight.org), key books, confessional documents
+14. **Key tensions and how each side resolves them** — most theological debates involve passages that seem to pull in different directions. Identify the core tension (e.g., "the new covenant is described as regenerate-only in Jer 31, but Heb 10:29 describes someone 'sanctified' by it who later falls away"). Show how each position resolves the tension. This is often where the real depth of the debate lives — don't gloss over it.
 
 ### The "Adjacent Questions" Principle
 
