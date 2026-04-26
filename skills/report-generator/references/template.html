@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{REPORT_TITLE}</title>
+  <style>
+    /* Paste or link base-styles.css here */
+
+    /* === Font Loading (adjust paths as needed) === */
+    /*
+    @font-face {
+      font-family: 'Noto Sans';
+      src: url('/workspace/.fonts/NotoSans-Regular.ttf') format('truetype');
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'Noto Sans';
+      src: url('/workspace/.fonts/NotoSans-Bold.ttf') format('truetype');
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: 'Noto Sans KR';
+      src: url('/workspace/.fonts/NotoSansKR-Regular.ttf') format('truetype');
+      font-weight: 400;
+    }
+    */
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- === HEADER === -->
+    <header class="report-header">
+      <h1>{TITLE}</h1>
+      <p class="subtitle">{DATE} · {CATEGORY_OR_AUTHOR}</p>
+    </header>
+
+    <!-- === TABLE OF CONTENTS (for 4+ sections) === -->
+    <nav class="toc">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#section-1">Section One Title</a></li>
+        <li><a href="#section-2">Section Two Title</a></li>
+        <li><a href="#section-3">Section Three Title</a></li>
+        <li><a href="#section-4">Section Four Title</a></li>
+      </ol>
+    </nav>
+
+    <!-- === EXECUTIVE SUMMARY (optional) === -->
+    <div class="callout callout-info">
+      <div class="callout-icon">📋</div>
+      <div class="callout-content">
+        <strong>Summary</strong>
+        <p>One to three sentence summary of the report's key findings or purpose.</p>
+      </div>
+    </div>
+
+    <!-- === MAIN CONTENT === -->
+    <main class="content">
+
+      <h2 id="section-1">Section One</h2>
+      <p>Body text goes here. Use <strong>bold</strong> for emphasis and <em>italics</em> for secondary emphasis.</p>
+
+      <h3>Subsection</h3>
+      <p>More content with a styled list:</p>
+      <ul class="styled-list">
+        <li><strong>Point one</strong> — explanation of the first point</li>
+        <li><strong>Point two</strong> — explanation of the second point</li>
+        <li><strong>Point three</strong> — explanation of the third point</li>
+      </ul>
+
+      <!-- Quote block example -->
+      <blockquote class="quote-block">
+        <p>"A relevant quote or Scripture passage goes here."</p>
+        <cite>— Source or Reference</cite>
+      </blockquote>
+
+      <h2 id="section-2">Section Two</h2>
+
+      <!-- Table example -->
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Detail</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Item one</td>
+            <td>Description here</td>
+            <td><span class="badge badge-green">Good</span></td>
+          </tr>
+          <tr>
+            <td>Item two</td>
+            <td>Description here</td>
+            <td><span class="badge badge-amber">Review</span></td>
+          </tr>
+          <tr>
+            <td>Item three</td>
+            <td>Description here</td>
+            <td><span class="badge badge-red">Issue</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="section-3">Section Three</h2>
+
+      <!-- Callout variants -->
+      <div class="callout callout-warning">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-content">
+          <strong>Important Note</strong>
+          <p>Something the reader should pay attention to.</p>
+        </div>
+      </div>
+
+      <div class="callout callout-success">
+        <div class="callout-icon">✅</div>
+        <div class="callout-content">
+          <strong>Recommendation</strong>
+          <p>The recommended action or conclusion.</p>
+        </div>
+      </div>
+
+      <!-- Timeline example -->
+      <h3>Process Steps</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">1</div>
+          <div class="timeline-content">
+            <h4>First Step</h4>
+            <p>Description of what happens in the first step.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">2</div>
+          <div class="timeline-content">
+            <h4>Second Step</h4>
+            <p>Description of what happens in the second step.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">3</div>
+          <div class="timeline-content">
+            <h4>Third Step</h4>
+            <p>Description of what happens in the third step.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="section-4">Section Four</h2>
+
+      <!-- Two-column layout -->
+      <div class="two-col">
+        <div class="col">
+          <h4>Option A</h4>
+          <p>Description of the first option with its pros and considerations.</p>
+        </div>
+        <div class="col">
+          <h4>Option B</h4>
+          <p>Description of the second option with its pros and considerations.</p>
+        </div>
+      </div>
+
+      <!-- Card grid -->
+      <div class="card-grid">
+        <div class="card">
+          <h4>Card Title</h4>
+          <p>Brief description or data point.</p>
+        </div>
+        <div class="card">
+          <h4>Card Title</h4>
+          <p>Brief description or data point.</p>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- References section -->
+      <h2>References</h2>
+      <ol>
+        <li>Source one — <a href="https://example.com">link</a></li>
+        <li>Source two — <a href="https://example.com">link</a></li>
+      </ol>
+
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="report-footer">
+      <p>Generated {DATE}</p>
+    </footer>
+
+  </div>
+</body>
+</html>

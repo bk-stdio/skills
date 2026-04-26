@@ -1,0 +1,544 @@
+/* ============================================
+   Report Generator — Base Styles
+   Notion-inspired, clean, minimal, professional
+   ============================================ */
+
+/* === Reset === */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Base === */
+html {
+  font-size: 15px;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  font-family: 'Noto Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1A1A1A;
+  background: #FFFFFF;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* === Container === */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* === Typography === */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2563EB;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1A1A1A;
+  line-height: 1.3;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  padding-top: 24px;
+  border-top: 1px solid #E5E7EB;
+}
+
+h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1A1A1A;
+  line-height: 1.4;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+em {
+  font-style: italic;
+  color: #4B5563;
+}
+
+small, .caption {
+  font-size: 13px;
+  color: #6B7280;
+}
+
+/* === Links === */
+a {
+  color: #2563EB;
+  text-decoration: none;
+  border-bottom: 1px solid #BFDBFE;
+}
+
+a:hover {
+  border-bottom-color: #2563EB;
+}
+
+/* === Header === */
+.report-header {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #2563EB;
+}
+
+.report-header h1 {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #6B7280;
+  margin-bottom: 0;
+}
+
+/* === Table of Contents === */
+.toc {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 24px 32px;
+  margin-bottom: 40px;
+}
+
+.toc h2 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6B7280;
+  margin: 0 0 12px 0;
+  padding: 0;
+  border: none;
+}
+
+.toc ol {
+  list-style: none;
+  counter-reset: toc-counter;
+  padding-left: 0;
+}
+
+.toc ol li {
+  counter-increment: toc-counter;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.toc ol li::before {
+  content: counter(toc-counter) ".";
+  font-weight: 600;
+  color: #2563EB;
+  margin-right: 8px;
+  display: inline-block;
+  width: 24px;
+}
+
+.toc a {
+  color: #374151;
+  border-bottom: none;
+}
+
+.toc a:hover {
+  color: #2563EB;
+}
+
+/* === Lists === */
+ul, ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.styled-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.styled-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.styled-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2563EB;
+  font-weight: 700;
+}
+
+/* === Tables === */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.data-table thead {
+  background: #F9FAFB;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #E5E7EB;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.data-table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #F3F4F6;
+  color: #4B5563;
+  vertical-align: top;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background: #FAFAFA;
+}
+
+.data-table tbody tr:hover {
+  background: #F0F7FF;
+}
+
+/* === Blockquote === */
+blockquote, .quote-block {
+  border-left: 3px solid #2563EB;
+  padding: 16px 24px;
+  margin: 24px 0;
+  background: #FAFBFF;
+  border-radius: 0 8px 8px 0;
+}
+
+blockquote p, .quote-block p {
+  font-style: italic;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+blockquote p:last-child, .quote-block p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote cite, .quote-block cite {
+  display: block;
+  font-size: 13px;
+  color: #6B7280;
+  font-style: normal;
+  margin-top: 8px;
+}
+
+/* === Callout Boxes === */
+.callout {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin: 24px 0;
+  border: 1px solid;
+}
+
+.callout-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+.callout-content {
+  flex: 1;
+}
+
+.callout-content strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.callout-content p {
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.callout-info {
+  background: #EFF6FF;
+  border-color: #BFDBFE;
+}
+
+.callout-warning {
+  background: #FFFBEB;
+  border-color: #FDE68A;
+}
+
+.callout-danger {
+  background: #FEF2F2;
+  border-color: #FECACA;
+}
+
+.callout-success {
+  background: #F0FDF4;
+  border-color: #BBF7D0;
+}
+
+/* === Badges === */
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.02em;
+}
+
+.badge-blue {
+  background: #EFF6FF;
+  color: #1D4ED8;
+}
+
+.badge-green {
+  background: #F0FDF4;
+  color: #15803D;
+}
+
+.badge-amber {
+  background: #FFFBEB;
+  color: #B45309;
+}
+
+.badge-red {
+  background: #FEF2F2;
+  color: #B91C1C;
+}
+
+.badge-gray {
+  background: #F3F4F6;
+  color: #4B5563;
+}
+
+/* === Code === */
+code {
+  font-family: 'Fira Code', 'Source Code Pro', 'Consolas', monospace;
+  font-size: 13px;
+  background: #F3F4F6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #DC2626;
+}
+
+pre {
+  background: #1F2937;
+  color: #E5E7EB;
+  padding: 20px 24px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 24px 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+  border-radius: 0;
+}
+
+/* === Dividers === */
+hr, .section-divider {
+  border: none;
+  border-top: 1px solid #E5E7EB;
+  margin: 40px 0;
+}
+
+/* === Two Column Layout === */
+.two-col {
+  display: flex;
+  gap: 32px;
+  margin: 24px 0;
+}
+
+.two-col .col {
+  flex: 1;
+}
+
+/* === Timeline === */
+.timeline {
+  margin: 24px 0;
+  padding-left: 8px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 36px;
+  bottom: -24px;
+  width: 2px;
+  background: #E5E7EB;
+}
+
+.timeline-marker {
+  width: 32px;
+  height: 32px;
+  background: #2563EB;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.timeline-content h4 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: #4B5563;
+  margin-bottom: 0;
+}
+
+/* === Grid (for reference cards, feature lists) === */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.card {
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 20px;
+  background: #FFFFFF;
+}
+
+.card h4 {
+  margin-top: 0;
+  color: #2563EB;
+}
+
+.card p {
+  font-size: 14px;
+  color: #4B5563;
+  margin-bottom: 0;
+}
+
+/* === Footer === */
+.report-footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #E5E7EB;
+  text-align: center;
+}
+
+.report-footer p {
+  font-size: 13px;
+  color: #9CA3AF;
+  margin-bottom: 0;
+}
+
+/* === Print / PDF Styles === */
+@media print {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+
+  h3, h4 {
+    page-break-after: avoid;
+  }
+
+  .callout, .data-table, blockquote, pre {
+    page-break-inside: avoid;
+  }
+
+  .report-header {
+    page-break-after: avoid;
+  }
+
+  a {
+    color: #2563EB;
+    border-bottom: none;
+  }
+
+  /* Show URLs in print */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 11px;
+    color: #9CA3AF;
+  }
+}
+
+/* === Page Numbers (PDF only) === */
+@page {
+  margin: 20mm;
+
+  @bottom-center {
+    content: counter(page);
+    font-size: 12px;
+    color: #9CA3AF;
+  }
+}

@@ -7,6 +7,7 @@ Claude Code skills collection. Each skill is a self-contained package that exten
 | Skill | Description |
 |-------|-------------|
 | **[reformed-theology](skills/reformed-theology/)** | Biblical theology, exegesis, apologetics, pastoral counsel, ethics, and worldview analysis rooted in the historic Reformed evangelical tradition. |
+| **[report-generator](skills/report-generator/)** | Generate clean, professional PDF reports from any content. Notion-inspired design — works with any domain. |
 
 ## How to Use
 
