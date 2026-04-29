@@ -1,137 +1,204 @@
-# Study Guide Structure
+# Study Guide Structure — 9 Sections
 
-Each study guide covers **one chapter** (or major section) of a biblical book and is designed for a **30–60 minute small-group discussion** with mixed audiences (believers + seekers).
+Each guide covers one chapter, designed for 30-60 minute small group discussion.
 
 ---
 
 ## 1. Header
 
-| Element | Description |
-|---------|-------------|
-| **Series tag** | `{{책이름}} 성경공부 · {{N}}회차` — e.g., "요한복음 성경공부 · 8회차" |
-| **Title** | A creative, thematic title that captures the chapter's central idea. Never just "Chapter 8." |
-| **Subtitle** | Verse range + Bible version — e.g., "요한복음 8장 전체 (1–59절) · 현대인의 성경" |
+```html
+<header class="report-header">
+  <div class="series-tag">요한복음 성경공부 · 3회차</div>
+  <h1>다시 태어나야 한다</h1>
+  <p class="subtitle">요한복음 3장 전체 (1–36절) · 현대인의 성경</p>
+</header>
+```
 
-**CSS classes:** `.report-header`, `.series-tag`, `h1`, `.subtitle`
-
----
+- **Series tag:** `{책이름} 성경공부 · {N}회차`
+- **Title:** Creative and thematic — captures the chapter's central idea. NEVER just "Chapter 3."
+  - Good: "다시 태어나야 한다" / "아브라함이 나기 전부터 내가 있다"
+  - Bad: "요한복음 3장" / "니고데모의 이야기"
+- **Subtitle:** Verse range + Bible version
 
 ## 2. 지난 시간 요약 (Previous Session Recap)
 
-- **Blue info callout** (`.callout.callout-info`)
-- Icon: 📖
-- Summarize the previous chapter's key points in 2–3 sentences
-- Preview what's coming in this chapter (bridge sentence)
+Blue info callout with 📖 icon. 2-3 sentences on previous chapter + 1 bridge sentence teasing this chapter.
 
-**Special case — Chapter 1:** Instead of a recap, provide a **book introduction**:
-- Author, date, audience, purpose
-- Major themes to watch for throughout the book
-- Why this book matters for your study group
+```html
+<div class="callout callout-info">
+  <div class="callout-icon">📖</div>
+  <div class="callout-content">
+    <strong>지난 시간 요약</strong>
+    <p>Summary of previous chapter... Bridge sentence about what's coming.</p>
+  </div>
+</div>
+```
 
----
+**Chapter 1 special case:** Replace with book introduction — author, date, audience, themes, purpose.
 
 ## 3. 목차 (Table of Contents)
 
-- **Numbered `<ol>` list** inside `<nav class="toc">`
-- Mirrors the `<h2>` sections in the document
-- Typically: 핵심 단어 → 본문 I → 본문 II → (본문 III/IV) → 나눔 질문
-- Include section subtitles and verse ranges in the TOC entries
+```html
+<nav class="toc">
+  <h2>목차</h2>
+  <ol>
+    <li>핵심 단어</li>
+    <li>본문 I — {Section title} ({verse range})</li>
+    <li>본문 II — {Section title} ({verse range})</li>
+    <li>나눔 질문</li>
+  </ol>
+</nav>
+```
 
----
+Mirrors the h2 sections. Typically: 핵심 단어 → 2-4 본문 sections → 나눔 질문.
 
 ## 4. 핵심 단어 (Key Terms)
 
-- **3–6 terms** per chapter
-- Each term rendered as a `.term-card`:
-  - `.term-name`: Korean term + English/Greek equivalent in parentheses
-  - `.term-def`: Contextual definition — why this word matters for THIS passage
-- **Not** academic dictionary definitions. Explain relevance.
-- Always include this note above the cards:
+3-6 terms. Always include this note first:
 
-> 외울 필요 없습니다. 읽다가 모르는 단어가 나오면 여기서 찾아보세요.
+```html
+<p style="font-size:12.5px; color:#6B7280; margin-bottom:10px;">
+  외울 필요 없습니다. 읽다가 모르는 단어가 나오면 여기서 찾아보세요.
+</p>
+```
 
----
+Each term as a card:
+
+```html
+<div class="term-card">
+  <div class="term-name">거듭남 (Born Again)</div>
+  <p class="term-def">Contextual definition — why this word matters for THIS passage...</p>
+</div>
+```
+
+- Korean name + English (or Greek/Hebrew) in parentheses
+- NOT dictionary definitions — explain relevance to this chapter
+- Include Greek/Hebrew only when it genuinely illuminates (e.g., ἄνωθεν means both "again" AND "from above")
 
 ## 5. 본문 + 해설 (Scripture Text + Commentary)
 
-This is the main body. Split the chapter into **2–4 logical sections** based on narrative or thematic breaks.
+This is the core. Split the chapter into **2-4 logical sections** by narrative/thematic breaks.
 
-### Each section contains:
+Each section:
 
-#### a) Scripture Block (`.scripture-block`)
-- Reference line (`.ref`): "요한복음 8:1–11 (현대인의 성경)"
-- Verse text with superscript verse numbers (`<span class="vn">`)
-- Use the configured Bible version text
+### a) Section heading
+```html
+<h2>2. 본문 I — 니고데모와의 대화: 거듭남</h2>
+```
 
-#### b) Commentary Block (`.commentary`)
-- Label (`.cm-label`): "배경 및 해설"
-- Content should include:
-  - **Historical/cultural background** — What would the original audience understand?
-  - **Literary context** — How does this fit the book's argument/narrative?
-  - **Theological significance** — What truth is being communicated?
-  - **Cross-references** — Connections to other passages (brief, not exhaustive)
+### b) Optional context callout (before scripture, when needed)
+```html
+<div class="callout callout-info">
+  <div class="callout-icon">🔍</div>
+  <div class="callout-content">
+    <strong>니고데모는 누구?</strong>
+    <p>Background context that helps the reader before reading the text...</p>
+  </div>
+</div>
+```
 
-#### c) Optional Callout Boxes (`.callout.callout-warning`)
-Use amber/warning callouts for:
-- Textual criticism notes (e.g., John 7:53–8:11 pericope)
-- Extended cultural context that needs its own box
-- Difficult theological concepts that benefit from dedicated explanation
-- Greek/Hebrew word studies that illuminate meaning
+### c) Scripture block
+```html
+<div class="scripture-block">
+  <span class="ref">요한복음 3:1–15 (현대인의 성경)</span>
+  <div class="verse">
+    <p><span class="vn">1</span>바리새파 사람 중에 니고데모라는...</p>
+    <p><span class="vn">2</span>그가 어느 날 밤...</p>
+  </div>
+</div>
+```
 
----
+- Include the FULL text of the Bible version for the verse range
+- Verse numbers as `<span class="vn">` superscript
+- Group verses into logical paragraphs (not one per verse)
+
+### d) Commentary block
+```html
+<div class="commentary">
+  <div class="cm-label">배경 및 해설</div>
+  <p><strong>"Key phrase" (verse#)</strong> — Explanation...</p>
+  <p><strong>Question or statement</strong> — Deeper insight...</p>
+</div>
+```
+
+See `theology-guide.md` for commentary voice and content guidelines.
+
+### e) Optional warning callout (textual criticism, difficult passages)
+```html
+<div class="callout callout-warning">
+  <div class="callout-icon">📝</div>
+  <div class="callout-content">
+    <strong>본문 비평 참고</strong>
+    <p>Textual criticism note...</p>
+  </div>
+</div>
+```
 
 ## 6. 나눔 질문 (Discussion Questions)
 
-Three tiers using the **OIA method** (Observation → Interpretation → Application):
+Three tiers, numbered sequentially 1-8:
 
-### 👀 본문이 뭐라고 말하고 있나요? (Observation)
-- 2–3 questions
-- Focus: What does the text literally say? What happened? Who said what?
-- Purpose: Gets everyone reading carefully. Non-believers can answer these confidently.
+```html
+<div class="question-section">
+  <h3>👀 본문이 뭐라고 말하고 있나요?</h3>
+  <div class="question">
+    <span class="q-num">1</span>
+    <span class="q-text">Question text with verse references...</span>
+  </div>
+</div>
 
-### 🤔 이게 무슨 뜻인가요? (Interpretation)
-- 2–3 questions
-- Focus: Why did the author include this? What does it mean in context?
-- Purpose: Deeper engagement. May require referencing the commentary.
+<div class="question-section">
+  <h3>🤔 이게 무슨 뜻인가요?</h3>
+  <!-- questions 4-6 -->
+</div>
 
-### 💬 그래서 나에게 어떤 의미가 있나요? (Application)
-- 2 questions
-- Focus: How does this connect to my life? What changes?
-- Purpose: Personal and vulnerable. Open-ended, not prescriptive.
+<div class="question-section">
+  <h3>💬 그래서 나에게 어떤 의미가 있나요?</h3>
+  <!-- questions 7-8 -->
+</div>
+```
 
-**Question design principles:**
-- Open-ended, never leading ("How does this make you feel?" not "Don't you think this is amazing?")
-- Sequentially numbered (1–8 across all three sections)
-- Rendered as `.question` divs with `.q-num` and `.q-text`
-
----
+See `theology-guide.md` for question design principles.
 
 ## 7. 오늘의 핵심 질문 (Big Question)
 
-- **Dark card** (`.big-question`) with white text
-- One single provocative question that captures the chapter's central tension
-- Should be:
-  - Memorable — sticks with people after they leave
-  - Genuinely challenging — not a softball with an obvious answer
-  - Universal — relevant to both believers and seekers
-- Example: "진리를 안다는 것이 왜 그들을 자유하게 하지 못했을까?"
+```html
+<div class="big-question">
+  <div class="label">오늘의 핵심 질문</div>
+  <div class="bq-text">Provocative question...<br><br>Use line breaks for dramatic pacing.</div>
+</div>
+```
 
----
+One question. See `theology-guide.md` for design principles.
 
 ## 8. 메모 (Notes)
 
-- **Dashed-border empty area** (`.notes-area`)
-- For personal notes during or after discussion
-- Prints as blank space in PDF — intentionally empty
+```html
+<div class="notes-area">
+  <div class="notes-label">메모</div>
+</div>
+```
 
----
+Empty space for personal notes. Prints as blank area in PDF.
 
 ## 9. 다음 시간 예고 (Next Session Preview)
 
-- **Green success callout** (`.callout.callout-success`)
-- Icon: 📅
-- Tease the next chapter's content in 1–2 sentences
-- Create anticipation without spoiling
-- For the **last chapter** of a book, either:
-  - Preview the next book in the series, or
-  - Provide a wrap-up reflection on the whole book
+```html
+<div class="callout callout-success">
+  <div class="callout-icon">📅</div>
+  <div class="callout-content">
+    <strong>다음 시간 예고</strong>
+    <p>1 teaser sentence + 1 hook that creates anticipation.</p>
+  </div>
+</div>
+```
+
+**Last chapter:** Either preview the next book or provide a series wrap-up reflection.
+
+## Footer
+
+```html
+<footer class="report-footer">
+  <p>{책이름} 성경공부 · {N}회차 · {책이름} {장}장</p>
+</footer>
+```

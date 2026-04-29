@@ -1,389 +1,68 @@
-/* ============================================================
-   Bible Study Guide — Stylesheet
-   Designed for HTML → PDF conversion via headless Chrome/Puppeteer.
-   Self-contained: uses system font stack with Noto Sans preferred.
-   ============================================================ */
-
-/* --- Reset & Base ------------------------------------------ */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 14.5px;
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-}
-
-body {
-  font-family: 'Noto Sans KR', 'Noto Sans', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  color: #1a1a1a;
-  background: #fff;
-  line-height: 1.8;
-}
-
-/* --- Layout ------------------------------------------------ */
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 36px 0;
-}
-
-/* --- Header ------------------------------------------------ */
-.report-header {
-  margin-bottom: 28px;
-  padding-bottom: 18px;
-  border-bottom: 2px solid #2563eb;
-}
-
-.report-header h1 {
-  font-size: 25px;
-  font-weight: 700;
-  color: #2563eb;
-  line-height: 1.4;
-  margin-bottom: 4px;
-}
-
-.series-tag {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: #6b7280;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-
-.subtitle {
-  font-size: 13.5px;
-  color: #6b7280;
-}
-
-/* --- Headings ---------------------------------------------- */
-h2 {
-  font-size: 19px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-top: 36px;
-  margin-bottom: 12px;
-  padding-top: 18px;
-  border-top: 1px solid #e5e7eb;
-}
-
-h2:first-of-type {
-  margin-top: 0;
-  padding-top: 0;
-  border-top: none;
-}
-
-h3 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-top: 18px;
-  margin-bottom: 8px;
-}
-
-/* --- Table of Contents ------------------------------------- */
-.toc {
-  margin-bottom: 24px;
-}
-
-.toc ol {
-  padding-left: 22px;
-  font-size: 14px;
-  line-height: 2;
-  color: #374151;
-}
-
-.toc ol li {
-  padding-left: 4px;
-}
-
-/* --- Callouts ---------------------------------------------- */
-.callout {
-  display: flex;
-  gap: 12px;
-  border-radius: 10px;
-  padding: 16px 18px;
-  margin: 18px 0;
-  font-size: 13.5px;
-  line-height: 1.75;
-  page-break-inside: avoid;
-}
-
-.callout-icon {
-  font-size: 20px;
-  flex-shrink: 0;
-  line-height: 1.6;
-}
-
-.callout-content {
-  flex: 1;
-}
-
-.callout-content strong {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 14px;
-}
-
-.callout-content p {
-  margin: 0;
-}
-
-/* Info (blue) */
-.callout-info {
-  background: #eff6ff;
-  border-left: 4px solid #2563eb;
-}
-
-.callout-info strong {
-  color: #1d4ed8;
-}
-
-/* Warning (amber) */
-.callout-warning {
-  background: #fffbeb;
-  border-left: 4px solid #d97706;
-}
-
-.callout-warning strong {
-  color: #b45309;
-}
-
-/* Success (green) */
-.callout-success {
-  background: #f0fdf4;
-  border-left: 4px solid #16a34a;
-}
-
-.callout-success strong {
-  color: #15803d;
-}
-
-/* --- Key Terms --------------------------------------------- */
-.term-card {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 14px 18px;
-  margin-bottom: 10px;
-  page-break-inside: avoid;
-}
-
-.term-name {
-  font-weight: 700;
-  color: #2563eb;
-  font-size: 15px;
-  margin-bottom: 4px;
-}
-
-.term-def {
-  font-size: 13.5px;
-  color: #374151;
-  line-height: 1.7;
-  margin: 0;
-}
-
-/* --- Scripture Block --------------------------------------- */
-.scripture-block {
-  background: #f1f5f9;
-  border-radius: 10px;
-  padding: 20px 22px;
-  margin: 16px 0;
-  page-break-inside: avoid;
-}
-
-.scripture-block .ref {
-  display: block;
-  font-size: 12px;
-  font-weight: 600;
-  color: #6b7280;
-  margin-bottom: 10px;
-  letter-spacing: 0.02em;
-}
-
-.scripture-block .verse p {
-  margin-bottom: 6px;
-  font-size: 14px;
-  line-height: 1.9;
-  color: #1e293b;
-}
-
-.vn {
-  font-size: 10px;
-  font-weight: 700;
-  color: #2563eb;
-  vertical-align: super;
-  margin-right: 2px;
-  line-height: 0;
-}
-
-/* --- Commentary -------------------------------------------- */
-.commentary {
-  background: #fafbff;
-  border-radius: 10px;
-  padding: 20px 22px;
-  margin: 12px 0 24px;
-  page-break-inside: avoid;
-}
-
-.cm-label {
-  font-size: 12px;
-  font-weight: 700;
-  color: #6b7280;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 10px;
-}
-
-.commentary p {
-  font-size: 14px;
-  line-height: 1.85;
-  margin-bottom: 10px;
-  color: #1e293b;
-}
-
-.commentary p:last-child {
-  margin-bottom: 0;
-}
-
-/* --- Discussion Questions ---------------------------------- */
-.question-section {
-  margin-bottom: 18px;
-}
-
-.question-section h3 {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-.question {
-  display: flex;
-  gap: 10px;
-  padding: 10px 0;
-  border-bottom: 1px solid #f3f4f6;
-  page-break-inside: avoid;
-}
-
-.question:last-child {
-  border-bottom: none;
-}
-
-.q-num {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: #eff6ff;
-  color: #2563eb;
-  font-size: 12px;
-  font-weight: 700;
-  flex-shrink: 0;
-  line-height: 1;
-}
-
-.q-text {
-  font-size: 14px;
-  color: #1e293b;
-  line-height: 1.7;
-  padding-top: 2px;
-}
-
-/* --- Big Question ------------------------------------------ */
-.big-question {
-  background: #1e293b;
-  color: #fff;
-  border-radius: 12px;
-  padding: 28px 24px;
-  margin: 30px 0;
-  text-align: center;
-  page-break-inside: avoid;
-}
-
-.big-question .label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #94a3b8;
-  margin-bottom: 12px;
-}
-
-.bq-text {
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1.55;
-  color: #fff;
-}
-
-/* --- Notes Area -------------------------------------------- */
-.notes-area {
-  border: 2px dashed #d1d5db;
-  border-radius: 10px;
-  min-height: 120px;
-  padding: 18px;
-  margin: 24px 0;
-  page-break-inside: avoid;
-}
-
-.notes-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: #9ca3af;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-/* --- Footer ------------------------------------------------ */
-.report-footer {
-  margin-top: 36px;
-  padding-top: 16px;
-  border-top: 1px solid #e5e7eb;
-  text-align: center;
-  font-size: 11.5px;
-  color: #9ca3af;
-}
-
-/* --- Print Rules ------------------------------------------- */
-@page {
-  size: A4;
-  margin: 16mm;
-}
-
-@media print {
-  body {
-    background: #fff;
-  }
-
-  .container {
-    padding: 0;
-    max-width: 100%;
-  }
-
-  .callout,
-  .term-card,
-  .scripture-block,
-  .commentary,
-  .question,
-  .big-question,
-  .notes-area {
-    page-break-inside: avoid;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-
-  .report-header {
-    page-break-after: avoid;
-  }
-}
+    @font-face { font-family: 'Noto Sans'; src: url('/workspace/.fonts/NotoSans-Regular.ttf') format('truetype'); font-weight: 400; }
+    @font-face { font-family: 'Noto Sans'; src: url('/workspace/.fonts/NotoSans-SemiBold.ttf') format('truetype'); font-weight: 600; }
+    @font-face { font-family: 'Noto Sans'; src: url('/workspace/.fonts/NotoSans-Bold.ttf') format('truetype'); font-weight: 700; }
+    @font-face { font-family: 'Noto Sans'; src: url('/workspace/.fonts/NotoSans-Italic.ttf') format('truetype'); font-style: italic; font-weight: 400; }
+    @font-face { font-family: 'Noto Sans KR'; src: url('/workspace/.fonts/NotoSansKR-Regular.ttf') format('truetype'); font-weight: 400; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 14.5px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { font-family: 'Noto Sans KR', 'Noto Sans', -apple-system, BlinkMacSystemFont, sans-serif; color: #1A1A1A; background: #FFFFFF; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 700px; margin: 0 auto; padding: 36px 0; }
+    .report-header { margin-bottom: 28px; padding-bottom: 18px; border-bottom: 2px solid #2563EB; }
+    .report-header h1 { font-size: 25px; font-weight: 700; color: #2563EB; line-height: 1.4; margin-bottom: 4px; }
+    .series-tag { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #6B7280; margin-bottom: 6px; }
+    .subtitle { font-size: 13.5px; color: #6B7280; margin-bottom: 0; }
+    h2 { font-size: 19px; font-weight: 700; color: #1A1A1A; line-height: 1.4; margin-top: 36px; margin-bottom: 12px; padding-top: 18px; border-top: 1px solid #E5E7EB; }
+    h2:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
+    h3 { font-size: 15.5px; font-weight: 700; color: #374151; line-height: 1.5; margin-top: 24px; margin-bottom: 8px; }
+    p { margin-bottom: 12px; font-size: 14px; }
+    strong { font-weight: 600; color: #111827; }
+    ul, ol { padding-left: 22px; margin-bottom: 12px; }
+    li { margin-bottom: 5px; font-size: 13.5px; }
+    .toc { background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; padding: 20px 28px; margin-bottom: 32px; }
+    .toc h2 { font-size: 12px; font-weight: 600; letter-spacing: 0.05em; color: #6B7280; margin: 0 0 10px 0; padding: 0; border: none; }
+    .toc ol { list-style: none; counter-reset: toc-counter; padding-left: 0; }
+    .toc ol li { counter-increment: toc-counter; margin-bottom: 4px; font-size: 13px; }
+    .toc ol li::before { content: counter(toc-counter) "."; font-weight: 600; color: #2563EB; margin-right: 8px; display: inline-block; width: 22px; }
+    .scripture-block { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 20px 24px; margin: 16px 0 24px 0; }
+    .scripture-block .ref { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #2563EB; margin-bottom: 10px; display: block; }
+    .scripture-block .verse { font-size: 13.5px; line-height: 1.9; color: #1E293B; }
+    .scripture-block .verse .vn { font-size: 10px; font-weight: 700; color: #94A3B8; vertical-align: super; margin-right: 2px; }
+    .scripture-block .verse p { margin-bottom: 3px; }
+    .callout { display: flex; gap: 10px; padding: 14px 18px; border-radius: 8px; margin: 18px 0; border: 1px solid; }
+    .callout-icon { font-size: 18px; flex-shrink: 0; line-height: 1.4; }
+    .callout-content { flex: 1; }
+    .callout-content strong { display: block; margin-bottom: 3px; font-size: 13px; }
+    .callout-content p { font-size: 13px; margin-bottom: 0; line-height: 1.7; }
+    .callout-info { background: #EFF6FF; border-color: #BFDBFE; }
+    .callout-info .callout-content strong { color: #1D4ED8; }
+    .callout-info .callout-content p { color: #1E40AF; }
+    .callout-warning { background: #FFFBEB; border-color: #FDE68A; }
+    .callout-warning .callout-content strong { color: #92400E; }
+    .callout-warning .callout-content p { color: #78350F; }
+    .callout-success { background: #F0FDF4; border-color: #BBF7D0; }
+    .callout-success .callout-content strong { color: #15803D; }
+    .callout-success .callout-content p { color: #166534; }
+    blockquote { border-left: 3px solid #2563EB; padding: 10px 18px; margin: 14px 0; background: #FAFBFF; border-radius: 0 8px 8px 0; }
+    blockquote p { font-size: 13px; color: #374151; margin-bottom: 4px; }
+    blockquote cite { display: block; font-size: 11.5px; color: #6B7280; margin-top: 4px; }
+    .term-card { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; }
+    .term-card .term-name { font-weight: 700; font-size: 14px; color: #2563EB; margin-bottom: 3px; }
+    .term-card .term-def { font-size: 13px; color: #4B5563; line-height: 1.7; margin: 0; }
+    .question-section { margin: 20px 0; }
+    .question-section h3 { color: #2563EB; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #EFF6FF; }
+    .question { margin-bottom: 16px; }
+    .question .q-num { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: #2563EB; color: white; border-radius: 50%; font-size: 11px; font-weight: 700; margin-right: 8px; flex-shrink: 0; vertical-align: top; }
+    .question .q-text { font-size: 13.5px; font-weight: 500; color: #1A1A1A; line-height: 1.7; display: inline; }
+    .commentary { background: #FAFBFF; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 20px; margin: 14px 0; }
+    .commentary .cm-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; color: #6366F1; margin-bottom: 6px; }
+    .commentary p { font-size: 13px; color: #374151; margin-bottom: 8px; line-height: 1.7; }
+    .commentary p:last-child { margin-bottom: 0; }
+    .big-question { background: #1E293B; color: #FFFFFF; border-radius: 10px; padding: 24px 28px; margin: 28px 0; text-align: center; }
+    .big-question .label { font-size: 10px; font-weight: 600; letter-spacing: 0.12em; color: #94A3B8; margin-bottom: 8px; }
+    .big-question .bq-text { font-size: 16px; font-weight: 600; line-height: 1.6; color: #F1F5F9; }
+    .notes-area { border: 1px dashed #D1D5DB; border-radius: 8px; padding: 14px 18px; margin: 14px 0; min-height: 70px; }
+    .notes-area .notes-label { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; color: #9CA3AF; margin-bottom: 4px; }
+    .report-footer { margin-top: 36px; padding-top: 14px; border-top: 1px solid #E5E7EB; text-align: center; }
+    .report-footer p { font-size: 11px; color: #9CA3AF; margin-bottom: 0; }
+    @media print { body { font-size: 13.5px; } .container { max-width: 100%; padding: 0; } h2, h3 { page-break-after: avoid; } .scripture-block, .callout, .commentary, .question, .big-question { page-break-inside: avoid; } }
+    @page { margin: 16mm; }
