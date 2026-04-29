@@ -58,7 +58,9 @@ Clean, Notion-style design optimized for both screen viewing and PDF printing.
 
 **Scripture block:** Light background (`#F8FAFC`), 1px border, rounded 10px. Verse numbers are superscript in subtle gray (`#94A3B8`).
 
-**Commentary block:** Very light purple (`#FAFBFF`), 1px border, rounded 8px. Label is uppercase, small, indigo-colored (`#6366F1`).
+**TOC:** Light gray background (`#F9FAFB`), 1px border, rounded 8px. Custom counter-based numbering — numbers are blue (`#2563EB`).
+
+**Commentary block:** Very light purple (`#FAFBFF`), 1px border, rounded 8px. Label is uppercase, small, **indigo-colored** (`#6366F1`, NOT gray).
 
 **Term cards:** White background, 1px gray border, rounded 8px. Term name in blue (`#2563EB`), bold.
 

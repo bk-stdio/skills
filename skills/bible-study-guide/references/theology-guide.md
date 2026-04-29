@@ -24,9 +24,11 @@ This is the most important reference file. The quality of the commentary is what
 
 This is critical for consistent quality. Follow these patterns exactly.
 
-### Pattern 1: Bold Key Phrase → Dash → Vivid Explanation
+### Pattern 1: Bold Key Phrase → Dash → Vivid Explanation (REQUIRED)
 
-Every commentary paragraph leads with a **bold verse reference or key phrase**, followed by a dash and explanation:
+**Every single commentary paragraph MUST start with a bold key phrase.** This is the most important formatting rule. It makes the guide scannable during discussion — a leader can quickly find commentary points.
+
+Format: `<p><strong>"Quoted phrase" (verse#)</strong> — Explanation...</p>`
 
 > **"다시 나야 한다" (3절)** — 원래 헬라어 ἄνωθεν (아노덴)은 이중 의미를 가집니다: "다시" 그리고 "위로부터." 니고데모는 "다시"로 알아들었고, 예수님은 "위로부터" — 즉 하나님으로부터 — 새로 태어나야 한다는 뜻이었습니다.
 
@@ -64,7 +66,22 @@ For well-known verses (e.g., John 3:16), decompose into components:
 - ❌ Commentary without verse references
 - ❌ Stating facts without explaining WHY they matter
 - ❌ Writing like a textbook: dry, passive, distant
+- ❌ Flowing prose paragraphs without bold anchors — EVERY paragraph must start with `<strong>`
+- ❌ Summarizing a verse range generically (e.g., "2-4절은 복음의 내용을 요약합니다")
+- ✅ Quote the actual phrase from the text and explain it
 - ✅ Vivid, concrete, specific. Make the reader SEE the scene and FEEL the tension.
+
+### Formatting Rule (Critical)
+
+In `<div class="commentary">` blocks, EVERY `<p>` tag must begin with `<strong>`. No exceptions. Examples:
+
+```html
+<p><strong>"다시 나야 한다" (3절)</strong> — Explanation...</p>
+<p><strong>왜 이것이 충격적이었나?</strong> Explanation...</p>
+<p><strong>"바람은 불고 싶은 대로 분다" (8절)</strong> — Explanation...</p>
+```
+
+Never write a commentary paragraph that starts with plain text. The bold anchor is what makes the guide usable during live discussion.
 
 ---
 
