@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>{{BOOK_NAME}} {{CHAPTER}}장 — 성경공부 가이드</title>
+<style>
+/* ================================================================
+   IMPORTANT: When generating a study guide, copy the FULL contents
+   of assets/style.css and paste it here. The CSS must be inlined
+   for portability (HTML → PDF conversion, email sharing, etc.).
+   ================================================================ */
+
+/* {{INLINE_CSS_HERE}} */
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ========== HEADER ========== -->
+  <header class="report-header">
+    <div class="series-tag">{{BOOK_NAME}} 성경공부 · {{SESSION_NUMBER}}회차</div>
+    <h1>{{CREATIVE_TITLE}}</h1>
+    <p class="subtitle">{{BOOK_NAME}} {{CHAPTER}}장 전체 ({{VERSE_RANGE}}) · {{BIBLE_VERSION}}</p>
+  </header>
+
+  <!-- ========== PREVIOUS SESSION RECAP (or Book Intro for Ch. 1) ========== -->
+  <div class="callout callout-info">
+    <div class="callout-icon">📖</div>
+    <div class="callout-content">
+      <strong>지난 시간 요약</strong>
+      <p>{{PREVIOUS_SESSION_SUMMARY}}</p>
+    </div>
+  </div>
+
+  <!-- ========== TABLE OF CONTENTS ========== -->
+  <nav class="toc">
+    <h2>목차</h2>
+    <ol>
+      <li>핵심 단어</li>
+      <li>본문 I — {{SECTION_1_TITLE}} ({{SECTION_1_VERSES}})</li>
+      <li>본문 II — {{SECTION_2_TITLE}} ({{SECTION_2_VERSES}})</li>
+      <!-- Add more sections as needed (typically 2–4) -->
+      <li>나눔 질문</li>
+    </ol>
+  </nav>
+
+  <!-- ========== KEY TERMS ========== -->
+  <h2>1. 핵심 단어</h2>
+  <p style="font-size:12.5px;color:#6B7280;margin-bottom:10px;">
+    외울 필요 없습니다. 읽다가 모르는 단어가 나오면 여기서 찾아보세요.
+  </p>
+
+  <div class="term-card">
+    <div class="term-name">{{TERM_KO}} ({{TERM_EN_OR_GREEK}})</div>
+    <p class="term-def">{{TERM_CONTEXTUAL_DEFINITION}}</p>
+  </div>
+
+  <div class="term-card">
+    <div class="term-name">{{TERM_KO_2}} ({{TERM_EN_OR_GREEK_2}})</div>
+    <p class="term-def">{{TERM_CONTEXTUAL_DEFINITION_2}}</p>
+  </div>
+  <!-- Repeat term-card blocks as needed (typically 3–6 terms) -->
+
+  <!-- ========== SCRIPTURE + COMMENTARY SECTION I ========== -->
+  <h2>2. 본문 I — {{SECTION_1_TITLE}}</h2>
+
+  <div class="scripture-block">
+    <span class="ref">{{BOOK_NAME}} {{CHAPTER}}:{{SECTION_1_VERSES}} ({{BIBLE_VERSION}})</span>
+    <div class="verse">
+      <p><span class="vn">1</span>{{VERSE_1_TEXT}}</p>
+      <p><span class="vn">2</span>{{VERSE_2_TEXT}}</p>
+      <!-- Continue for all verses in this section -->
+    </div>
+  </div>
+
+  <div class="commentary">
+    <div class="cm-label">배경 및 해설</div>
+    <p>{{COMMENTARY_PARAGRAPH_1}}</p>
+    <p>{{COMMENTARY_PARAGRAPH_2}}</p>
+  </div>
+
+  <!-- Optional: Callout for textual criticism or cultural context -->
+  <div class="callout callout-warning">
+    <div class="callout-icon">⚠️</div>
+    <div class="callout-content">
+      <strong>{{CALLOUT_TITLE}}</strong>
+      <p>{{CALLOUT_CONTENT}}</p>
+    </div>
+  </div>
+
+  <!-- ========== SCRIPTURE + COMMENTARY SECTION II ========== -->
+  <h2>3. 본문 II — {{SECTION_2_TITLE}}</h2>
+
+  <div class="scripture-block">
+    <span class="ref">{{BOOK_NAME}} {{CHAPTER}}:{{SECTION_2_VERSES}} ({{BIBLE_VERSION}})</span>
+    <div class="verse">
+      <p><span class="vn">{{N}}</span>{{VERSE_TEXT}}</p>
+      <!-- Continue for all verses in this section -->
+    </div>
+  </div>
+
+  <div class="commentary">
+    <div class="cm-label">배경 및 해설</div>
+    <p>{{COMMENTARY_PARAGRAPH}}</p>
+  </div>
+  <!-- Repeat Scripture + Commentary blocks for Sections III, IV as needed -->
+
+  <!-- ========== DISCUSSION QUESTIONS ========== -->
+  <h2>{{N}}. 나눔 질문</h2>
+
+  <div class="question-section">
+    <h3>👀 본문이 뭐라고 말하고 있나요?</h3>
+    <div class="question"><span class="q-num">1</span><span class="q-text">{{OBSERVATION_Q1}}</span></div>
+    <div class="question"><span class="q-num">2</span><span class="q-text">{{OBSERVATION_Q2}}</span></div>
+    <div class="question"><span class="q-num">3</span><span class="q-text">{{OBSERVATION_Q3}}</span></div>
+  </div>
+
+  <div class="question-section">
+    <h3>🤔 이게 무슨 뜻인가요?</h3>
+    <div class="question"><span class="q-num">4</span><span class="q-text">{{INTERPRETATION_Q1}}</span></div>
+    <div class="question"><span class="q-num">5</span><span class="q-text">{{INTERPRETATION_Q2}}</span></div>
+    <div class="question"><span class="q-num">6</span><span class="q-text">{{INTERPRETATION_Q3}}</span></div>
+  </div>
+
+  <div class="question-section">
+    <h3>💬 그래서 나에게 어떤 의미가 있나요?</h3>
+    <div class="question"><span class="q-num">7</span><span class="q-text">{{APPLICATION_Q1}}</span></div>
+    <div class="question"><span class="q-num">8</span><span class="q-text">{{APPLICATION_Q2}}</span></div>
+  </div>
+
+  <!-- ========== BIG QUESTION ========== -->
+  <div class="big-question">
+    <div class="label">오늘의 핵심 질문</div>
+    <div class="bq-text">{{BIG_QUESTION}}</div>
+  </div>
+
+  <!-- ========== NOTES ========== -->
+  <div class="notes-area">
+    <div class="notes-label">메모</div>
+  </div>
+
+  <!-- ========== NEXT SESSION PREVIEW ========== -->
+  <div class="callout callout-success">
+    <div class="callout-icon">📅</div>
+    <div class="callout-content">
+      <strong>다음 시간 예고</strong>
+      <p>{{NEXT_SESSION_PREVIEW}}</p>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="report-footer">
+    <p>{{BOOK_NAME}} 성경공부 · {{SESSION_NUMBER}}회차 · {{CHAPTER}}장</p>
+  </footer>
+
+</div>
+</body>
+</html>

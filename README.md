@@ -8,6 +8,7 @@ Claude Code skills collection. Each skill is a self-contained package that exten
 |-------|-------------|
 | **[reformed-theology](skills/reformed-theology/)** | Biblical theology, exegesis, apologetics, pastoral counsel, ethics, and worldview analysis rooted in the historic Reformed evangelical tradition. |
 | **[report-generator](skills/report-generator/)** | Generate clean, professional PDF reports from any content. Notion-inspired design — works with any domain. |
+| **[bible-study-guide](skills/bible-study-guide/)** | Generate beautifully formatted Bible study guide PDFs for small group discussion. Proven pedagogical structure with OIA questions, designed for mixed audiences of believers and seekers. |
 
 ## How to Use
 
@@ -20,7 +21,7 @@ Copy the skill folder to your Claude Code skills directory:
 git clone https://github.com/bk-stdio/skills.git
 
 # Copy a skill to Claude Code
-cp -r skills/reformed-theology ~/.claude/skills/
+cp -r skills/bible-study-guide ~/.claude/skills/
 ```
 
 Or reference it directly in your Claude Code configuration.
